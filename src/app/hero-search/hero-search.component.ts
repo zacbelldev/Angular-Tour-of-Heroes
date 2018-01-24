@@ -4,7 +4,9 @@ import { Observable } from 'rxjs/Observable';
 import { Subject }    from 'rxjs/Subject';
 import { of }         from 'rxjs/observable/of';
 
-import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
+import {
+   debounceTime, distinctUntilChanged, switchMap
+ } from 'rxjs/operators';
 
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
