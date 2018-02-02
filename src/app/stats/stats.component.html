@@ -1,0 +1,11 @@
+<h2>Hero Stats</h2>
+
+<ul class="heroes">
+  <!-- HERE NEXT -->
+  <!-- <li *ngIf="{{hero.rank}} > 3;" *ngFor="let hero of heroRanks" style="list-style: none;"> -->
+  <ng-container *ngFor="let hero of heroRanks">
+    <li *ngIf="hero.rank > 3;" style="list-style: none;">
+      <span class="badge">Rank: {{hero.rank}}</span>{{hero.name}}
+    </li>
+  </ng-container>
+</ul>
